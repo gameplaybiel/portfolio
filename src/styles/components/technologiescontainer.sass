@@ -1,0 +1,85 @@
+@use '../variables'
+@use '../mixins'
+
+.technologies-container
+    margin-bottom: 1rem
+
+    .technologies-grid
+        display: flex
+        flex-wrap: wrap
+        gap: 1.5rem
+
+        .technology-card
+            @include mixins.center
+            gap: 1rem
+            padding: 1rem
+            border: 1px solid #333
+            width: 45%
+            border-radius: variables.$card-border-radius
+
+            h3
+                color: variables.$text-color
+                margin-bottom: 1rem
+
+            svg
+                font-size: 6rem
+        
+        #java
+            svg
+                color: #f89820      // Cor do Java
+
+        #html
+            svg
+                color: #e44d26      // Cor do HTML5
+
+        #css
+            svg
+                color: #1572b6      // Cor do CSS3
+
+        #js
+            svg
+                color: #f0db4f      // Cor do JavaScript
+
+        #mysql
+            svg
+                color: #00758f      // Cor do MySQL
+
+        #postgresql
+            svg
+                color: #336791      // Cor do PostgreSQL
+
+        #mongodb
+            svg
+                color: #4db33d      // Cor do MongoDB
+
+        #git
+            svg
+                color: #f05032      // Cor do Git/GitHub
+
+        #docker
+            svg
+                color: #2496ed      // Cor do Docker
+
+        #aws
+            svg
+                color: #ff9900      // Cor da AWS
+
+        #postman
+            svg
+                color: #ff6c37      // Cor do Postman
+
+        #spring
+            svg
+                color: #6db33f      // Cor do Spring Boot
+
+        #react
+            svg
+                color: #61dafb      // Cor do ReactJS
+
+        #oracle
+            svg
+                color: #f80000      // Cor do Oracle
+
+        #typescript
+            svg
+                color: #3178c6      // Cor do TypeScript

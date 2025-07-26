@@ -1,0 +1,63 @@
+.projects-container
+  margin-top: 2rem
+  padding: 1rem
+
+  h2
+    text-align: center
+    font-size: 2rem
+    margin-bottom: 1.5rem
+
+  p
+    text-align: center
+    margin-bottom: 2rem
+    color: #ccc
+
+  .projects-grid
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+    gap: 1.5rem
+
+  .project-card
+    background: #1e1e1e
+    padding: 1rem
+    border-radius: 8px
+    color: #fff
+    text-align: center
+    transition: transform 0.3s ease, background 0.3s ease
+
+    &:hover
+      transform: scale(1.05)
+      background: #0072ff
+
+    h3
+      margin-bottom: 0.5rem
+
+    .tech-list
+      list-style: none
+      padding: 0
+      margin: 0.5rem 0
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      gap: 0.5rem
+
+      li
+        background: #333
+        padding: 0.3rem 0.6rem
+        border-radius: 4px
+        font-size: 0.85rem
+        color: #fff
+
+    .btn
+      display: inline-block
+      margin-top: 0.5rem
+      padding: 0.6rem 1rem
+      background: linear-gradient(90deg, #00c6ff, #0072ff)
+      color: #fff
+      text-decoration: none
+      border-radius: 4px
+      transition: transform 0.3s, background 0.3s
+
+      &:hover
+        transform: scale(1.05)
+        background: linear-gradient(90deg, #0072ff, #00c6ff)
